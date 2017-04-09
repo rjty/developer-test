@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace OrangeBricks.Web.Models
@@ -10,10 +11,27 @@ namespace OrangeBricks.Web.Models
         public int Id { get; set; }
 
         [Required]
-        public string PropertyType { get; set; }
+        public string PropertyType { get; set; } 
 
         [Required]
-        public string StreetName { get; set; }
+        public string StreetName { get; set; } 
+
+        [Required]
+        public int AskingPrice { get; set; } // -
+
+        [Required]
+        public string City { get; set; } // -
+
+        public string District { get; set; } // -
+
+        public string County { get; set; } // -
+
+        public string Country { get; set; } // -
+
+        [DataType(DataType.PostalCode)]
+        public virtual string Postalcode { get; set; } // -
+
+        public byte ImageThumb { get; set; } // -
 
         [Required]
         public string Description { get; set; }
@@ -27,5 +45,6 @@ namespace OrangeBricks.Web.Models
         public bool IsListedForSale { get; set; }
 
         public ICollection<Offer> Offers { get; set; }
+
     }
 }

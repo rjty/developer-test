@@ -5,8 +5,10 @@ namespace OrangeBricks.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "The email address is required")]
         [Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "The email address is not valid")] // -
+
         public string Email { get; set; }
     }
 
@@ -48,9 +50,9 @@ namespace OrangeBricks.Web.Models
 
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "The email address is required")]
         [Display(Name = "Email")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "The email address is not valid")] // -
         public string Email { get; set; }
 
         [Required]
@@ -64,9 +66,9 @@ namespace OrangeBricks.Web.Models
 
     public class RegisterViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "The email address is required")]
         [Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "The email address is not valid")] // -
         public string Email { get; set; }
 
         [Required]
@@ -88,9 +90,9 @@ namespace OrangeBricks.Web.Models
 
     public class ResetPasswordViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "The email address is required")]
         [Display(Name = "Email")]
+        [EmailAddress(ErrorMessage = "The email address is not valid")] // -
         public string Email { get; set; }
 
         [Required]
@@ -109,9 +111,8 @@ namespace OrangeBricks.Web.Models
 
     public class ForgotPasswordViewModel
     {
-        [Required]
-        [EmailAddress]
-        [Display(Name = "Email")]
+        [Required(ErrorMessage = "The email address is required")]
+        [EmailAddress(ErrorMessage = "The email address is not valid")] // -
         public string Email { get; set; }
     }
 }

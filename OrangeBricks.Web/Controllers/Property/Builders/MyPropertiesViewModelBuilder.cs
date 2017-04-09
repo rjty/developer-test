@@ -26,7 +26,14 @@ namespace OrangeBricks.Web.Controllers.Property.Builders
                         Description = p.Description,
                         NumberOfBedrooms = p.NumberOfBedrooms,
                         PropertyType = p.PropertyType,
-                        IsListedForSale = p.IsListedForSale
+                        IsListedForSale = p.IsListedForSale,
+                        AskingPrice = p.AskingPrice,
+                        City = p.City,
+                        District = p.District,
+                        County = p.County,
+                        Country = p.Country,
+                        Postalcode = p.Postalcode,
+                        ImageThumb = p.ImageThumb
                     })
                     .ToList()
             };

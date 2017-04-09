@@ -7,6 +7,7 @@ using OrangeBricks.Web.Controllers.Property.Builders;
 using OrangeBricks.Web.Controllers.Property.Commands;
 using OrangeBricks.Web.Controllers.Property.ViewModels;
 using OrangeBricks.Web.Models;
+using System.Collections.Generic;
 
 namespace OrangeBricks.Web.Controllers.Property
 {
@@ -32,6 +33,18 @@ namespace OrangeBricks.Web.Controllers.Property
         public ActionResult Create()
         {
             var viewModel = new CreatePropertyViewModel();
+
+            viewModel.BedroomCount = new List<SelectListItem> {
+             new SelectListItem { Value = "0", Text = "None"},
+             new SelectListItem { Value = "1", Text = "One"},
+             new SelectListItem { Value = "2", Text = "Two"},
+             new SelectListItem { Value = "3", Text = "Three"},
+             new SelectListItem { Value = "4", Text = "Four"},
+             new SelectListItem { Value = "5", Text = "Five"},
+             new SelectListItem { Value = "6", Text = "Six"},
+             new SelectListItem { Value = "7", Text = "Seven"},
+             new SelectListItem { Value = "8", Text = "Eight"},
+            };
 
             viewModel.PossiblePropertyTypes = new string[] { "House", "Flat", "Bungalow" }
                 .Select(x => new SelectListItem { Value = x, Text = x })
