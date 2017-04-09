@@ -15,10 +15,17 @@ namespace OrangeBricks.Web.Controllers.Property.Commands
         {
             var property = new Models.Property
             {
-               PropertyType = command.PropertyType,
-               StreetName = command.StreetName,
-               Description = command.Description,
-               NumberOfBedrooms = command.NumberOfBedrooms
+                PropertyType = command.PropertyType,
+                StreetName = command.StreetName,
+                District = command.District,
+                City = command.City,
+                Postalcode = command.Postalcode,
+                Country = command.Country,
+                Description = command.Description,
+                NumberOfBedrooms = command.NumberOfBedrooms,
+                AskingPrice = command.AskingPrice,
+                ImageThumb = command.ImageThumb,
+                County = command.County
             };
 
             property.SellerUserId = command.SellerUserId;

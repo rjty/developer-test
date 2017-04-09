@@ -244,9 +244,27 @@
     <Compile Include="Migrations\201505101607236_AddFieldsToOffers.Designer.cs">
       <DependentUpon>201505101607236_AddFieldsToOffers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704081246364_Files.cs" />
+    <Compile Include="Migrations\201704081246364_Files.Designer.cs">
+      <DependentUpon>201704081246364_Files.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704081301267_Files1.cs" />
+    <Compile Include="Migrations\201704081301267_Files1.Designer.cs">
+      <DependentUpon>201704081301267_Files1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704081304069_Property.cs" />
+    <Compile Include="Migrations\201704081304069_Property.Designer.cs">
+      <DependentUpon>201704081304069_Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704081354567_Files2.cs" />
+    <Compile Include="Migrations\201704081354567_Files2.Designer.cs">
+      <DependentUpon>201704081354567_Files2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\File.cs" />
+    <Compile Include="Models\FileType.cs" />
     <Compile Include="Models\OfferStatus.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -274,6 +292,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -292,7 +311,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -353,6 +374,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201505101607236_AddFieldsToOffers.resx">
       <DependentUpon>201505101607236_AddFieldsToOffers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704081246364_Files.resx">
+      <DependentUpon>201704081246364_Files.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704081301267_Files1.resx">
+      <DependentUpon>201704081301267_Files1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704081304069_Property.resx">
+      <DependentUpon>201704081304069_Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704081354567_Files2.resx">
+      <DependentUpon>201704081354567_Files2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -8,5 +8,13 @@ namespace OrangeBricks.Web.Controllers.Property.ViewModels
         public string PropertyType { get; set; }
         public int Id { get; set; }
         public bool IsListedForSale { get; set; }
+        public int AskingPrice { get; set; } // -
+        public string City { get; set; } // -
+        public string District { get; set; } // -
+        public string County { get; set; } // -
+        public string Country { get; set; } // -
+        public virtual string Postalcode { get; set; }
+        public byte ImageThumb { get; set; } // - tbd
+
     }
 }

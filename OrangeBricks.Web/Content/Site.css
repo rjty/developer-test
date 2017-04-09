@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* custom Styles */
+.align-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.inln-block {
+    display: inline-block;
+}
