@@ -4,8 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2>Properties For Sale</h2>
+
+@if (TempData["message"] != null)
+{
+    <p class="alert alert-success" id="successMessage">@TempData["message"]</p>
+}
+
 @using (Html.BeginForm("Index", "Property", FormMethod.Get, new { @class = "form-horizontal" }))
 {
+
     <div class="form-group form-group-lg">
         @Html.LabelFor(x => x.Search, "Search:", new { @class = "col-sm-2 control-label" })
         <div class="col-sm-8">
@@ -18,14 +25,32 @@
 
 }
 <p>@Model.Properties.Count properties matching your criteria...</p>
-@foreach (var property in Model.Properties)
+@if (Request.IsAuthenticated)
 {
-    <hr /> // - create as partial view
-        <h3 class="inln-block">@property.StreetName</h3><h3 class="align-right inln-block">@("£")@property.AskingPrice</h3>
+    foreach (var property in Model.Properties)
+    {
+        <hr /> // - create as partial view
+        <h3 class="inln-block">@property.StreetName</h3>
+        <h3 class="align-right inln-block">@("£")@property.AskingPrice</h3>
         <p>@property.NumberOfBedrooms bedroom @property.PropertyType</p>
         <p>@property.Description</p>
+        <div class="row">
+            <div class="col-md-6">
+                <row>
+                    <div class="col-xs-3">
+                        <a href="@Url.Action("MakeOffer", "Property", new { id = property.Id })" class="btn btn-primary custom-input-width pull-left">Make Offer</a>
+                    </div>
+                    <div class="col-xs-3">
+                        @if (User.IsInRole("Buyer"))
+                        {
+                        <a href="@Url.Action("BookViewing", "Property", new { id = property.Id })" class="btn btn-success custom-button-width">Book Viewing</a>
+                        }
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                </row>
+            </div>
+        </div>
 
-    <a href="@Url.Action("MakeOffer", "Property", new {id = property.Id})" class="btn btn-primary">
-        Make Offer
-    </a>
+    }
 }

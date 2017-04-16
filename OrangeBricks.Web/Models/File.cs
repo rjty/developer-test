@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using System.ComponentModel.DataAnnotations;
 
 namespace OrangeBricks.Web.Models
 {
@@ -15,7 +15,7 @@ namespace OrangeBricks.Web.Models
         public string ContentType { get; set; }
         public byte[] Content { get; set; }
         public FileType FileType { get; set; }
+        public int PersonId { get; set; }
         public virtual Property Property { get; set; }
-
     }
 }

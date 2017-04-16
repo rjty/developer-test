@@ -1,0 +1,30 @@
+﻿@model OrangeBricks.Web.Controllers.Property.ViewModels.BookViewingViewModel
+@{
+    ViewBag.Title = "Book Viewing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Book Viewing</h2>
+
+<p>When would you like to view the @Model.PropertyType on @Model.StreetName?</p>
+
+@using (Html.BeginForm("BookViewing", "Property", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <div class="form-group">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RequestedViewingDateTime, "Select Date/Time", new { @class = "control-label" })
+        </div>
+        <div class="col-md-10">
+            @Html.Hidden("PropertyId", Model.PropertyId)
+            @Html.EditorFor(m => m.RequestedViewingDateTime, new { @class = "datetimepicker form-control" })
+            @Html.ValidationMessageFor(m => m.RequestedViewingDateTime)
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" class="btn btn-default" value="Book Viewing" />
+        </div>
+    </div>
+
+}

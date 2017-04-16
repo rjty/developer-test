@@ -32,3 +32,7 @@ textarea {
 .inln-block {
     display: inline-block;
 }
+
+li.active > a {
+    color: orange !important;
+}

@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using OrangeBricks.Web.Infrastructure;
 using OrangeBricks.Web.Models;
+using System;
 
 namespace OrangeBricks.Web.Controllers
 {
@@ -14,9 +15,11 @@ namespace OrangeBricks.Web.Controllers
     public class AccountController : Controller
     {
         private ApplicationUserManager _userManager;
+        private readonly IOrangeBricksContext _context;
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager, IOrangeBricksContext context)
         {
+            _context = context;
             UserManager = userManager;
             SignInManager = signInManager;
         }
@@ -68,13 +71,17 @@ namespace OrangeBricks.Web.Controllers
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+
             switch (result)
             {
                 case SignInStatus.Success:
                     return RedirectToLocal(returnUrl);
+
                 case SignInStatus.LockedOut:
                     return View("Lockout");
+
                 case SignInStatus.Failure:
+
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
@@ -168,11 +175,11 @@ namespace OrangeBricks.Web.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
-            if (Url.IsLocalUrl(returnUrl))
-            {
-                return Redirect(returnUrl);
-            }
-            return RedirectToAction("Index", "Home");
+                if (Url.IsLocalUrl(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+                return RedirectToAction("Index", "Home");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

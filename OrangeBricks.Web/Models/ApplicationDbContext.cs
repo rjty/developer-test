@@ -1,5 +1,4 @@
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity.Validation;
 using System.Linq;
@@ -20,11 +19,12 @@ namespace OrangeBricks.Web.Models
 
         public IDbSet<Property> Properties { get; set; }
         public IDbSet<Offer> Offers { get; set; }
-        public IDbSet<File> Files { get; set; } //-
+        public IDbSet<File> Files { get; set; }         // - handle property image
+        public IDbSet<Viewing> Viewings { get; set; }   // -
 
         public new void SaveChanges()
         {
-            try // -
+            try // - debug only
             {
                 base.SaveChanges();
             }
@@ -50,9 +50,12 @@ namespace OrangeBricks.Web.Models
     public interface IOrangeBricksContext
     {
         IDbSet<Property> Properties { get; set; }
+
         IDbSet<Offer> Offers { get; set; }
    
         IDbSet<File> Files { get; set; } //-
+
+        IDbSet<Viewing> Viewings { get; set; }   // -
 
         void SaveChanges();
     }

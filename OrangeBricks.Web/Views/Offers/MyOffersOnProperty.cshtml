@@ -1,0 +1,26 @@
+﻿@model OrangeBricks.Web.Controllers.Offers.ViewModels.OffersOnPropertyViewModel
+@{
+    ViewBag.Title = "My Offers";
+}
+
+<h2>My Offers</h2>
+
+@if (Model.HasOffers)
+{
+    <p>There are @Model.Offers.Count() offers on this property...</p>
+
+    foreach (var offer in Model.Offers)
+    {
+        <hr />
+        <div>
+            <p><strong>Property type:</strong> @Model.PropertyType</p>
+            <p><strong>Street name:</strong> @Model.StreetName</p>
+            <p><strong>District:</strong> @Model.District</p>
+            <p><strong>City:</strong> @Model.City</p>
+            <p><strong>Asking Price:</strong> @Model.AskingPrice</p>
+            <p><strong>Offer Amount: </strong> £@offer.Amount</p>
+            <p><strong>Offer Made At: </strong> @offer.CreatedAt.ToLongTimeString() on @offer.CreatedAt.ToShortDateString()</p>
+            <p><strong>Status: </strong> @offer.Status</p>
+        </div>
+    }
+}

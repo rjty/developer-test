@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using OrangeBricks.Web.Attributes;
@@ -8,6 +7,7 @@ using OrangeBricks.Web.Controllers.Property.Commands;
 using OrangeBricks.Web.Controllers.Property.ViewModels;
 using OrangeBricks.Web.Models;
 using System.Collections.Generic;
+using OrangeBricks.Web.Controllers.Offers.Builders;
 
 namespace OrangeBricks.Web.Controllers.Property
 {
@@ -28,6 +28,7 @@ namespace OrangeBricks.Web.Controllers.Property
 
             return View(viewModel);
         }
+
 
         [OrangeBricksAuthorize(Roles = "Seller")]
         public ActionResult Create()
@@ -66,6 +67,7 @@ namespace OrangeBricks.Web.Controllers.Property
             return RedirectToAction("MyProperties");
         }
 
+
         [OrangeBricksAuthorize(Roles = "Seller")]
         public ActionResult MyProperties()
         {
@@ -74,6 +76,7 @@ namespace OrangeBricks.Web.Controllers.Property
 
             return View(viewModel);
         }
+
 
         [HttpPost]
         [OrangeBricksAuthorize(Roles = "Seller")]
@@ -85,6 +88,7 @@ namespace OrangeBricks.Web.Controllers.Property
 
             return RedirectToAction("MyProperties");
         }
+
 
         [OrangeBricksAuthorize(Roles = "Buyer")]
         public ActionResult MakeOffer(int id)
@@ -98,9 +102,51 @@ namespace OrangeBricks.Web.Controllers.Property
         [OrangeBricksAuthorize(Roles = "Buyer")]
         public ActionResult MakeOffer(MakeOfferCommand command)
         {
+            var messagePass = "Your Offer has been Saved";
+            var messageFail = "Your Offer has not been Saved. Please try Again";
             var handler = new MakeOfferCommandHandler(_context);
 
             handler.Handle(command);
+
+            if (ModelState.IsValid)
+            {
+                TempData["message"] = messagePass; 
+            }
+            else
+            {
+                TempData["message"] = messageFail; 
+            }
+
+            return RedirectToAction("Index");
+        }
+
+
+        [OrangeBricksAuthorize(Roles = "Buyer")]
+        public ActionResult BookViewing(int id)
+        {
+            var builder = new BookViewingViewModelBuilder(_context);
+            var viewModel = builder.Build(id);
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [OrangeBricksAuthorize(Roles = "Buyer")]
+        public ActionResult BookViewing(BookViewingCommand command)
+        {
+            var messageFail = "Your Booking Request has not been Saved. Please try Again";
+            var messagePass = "Your Booking Request has been made. You will recieve an e-mail to confirm the appointment time.";
+
+            var handler = new BookViewingCommandHandler(_context);
+            handler.Handle(command);
+
+            if (ModelState.IsValid)
+            {
+                TempData["message"] = messagePass; 
+            }
+            else
+            {
+                TempData["message"] = messageFail; 
+            }
 
             return RedirectToAction("Index");
         }

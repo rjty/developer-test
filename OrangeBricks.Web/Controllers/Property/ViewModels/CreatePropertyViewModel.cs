@@ -24,24 +24,18 @@ namespace OrangeBricks.Web.Controllers.Property.ViewModels
 
         [Required(ErrorMessage = "Please supply an Asking Price")]
         [Display(Name = "Valuation")]
-        public int AskingPrice { get; set; } // -
+        public int AskingPrice { get; set; }
 
         [Display(Name = "City or Town")]
-        public string City { get; set; } // -
-
-        public string District { get; set; } // -
-
-        public string County { get; set; } // -
-
+        public string City { get; set; } 
+        public string District { get; set; }
+        public string County { get; set; } 
         [Required]
         [Display(Name = "Post Code")]
         public virtual string Postalcode { get; set; }
-
-        public string Country { get; set; } // -
-
+        public string Country { get; set; }
         [Display(Name = "Photograph")]
-        public byte ImageThumb { get; set; } // -
-
+        public byte ImageThumb { get; set; }
         public IEnumerable<SelectListItem> PossiblePropertyTypes { get; set; }
     }
 }

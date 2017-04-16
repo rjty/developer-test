@@ -1,0 +1,20 @@
+﻿@model DateTime?
+
+@Html.TextBox("", (Model.HasValue ? Model.Value.ToShortDateString() :
+    string.Empty), new
+    {
+        @class = "datePicker",
+        @readonly = "readonly"
+    })
+
+<script>
+    $(function () {
+        $(".datePicker").datepicker({
+            showOn: "button",
+            buttonImage: "/Content/images/calendar-icon.png",
+            buttonImageOnly: true,
+            buttonText: "Select date",
+            defaultDate: +1
+        });
+    });
+</script>

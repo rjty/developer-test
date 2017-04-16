@@ -65,40 +65,48 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.SDK.2.9.0\lib\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.SDK.2.9.0\lib\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -174,6 +182,14 @@
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WindowsAzureEventSource, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.SDK.2.9.0\lib\WindowsAzureEventSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsAzureTelemetryEvents, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.SDK.2.9.0\lib\WindowsAzureTelemetryEvents.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Owin">
@@ -189,12 +205,18 @@
     <Compile Include="Attributes\OrangeBricksAuthorizeAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Offers\Builders\ViewRequestsOnPropertyViewModelBuilder.cs" />
     <Compile Include="Controllers\Offers\Builders\OffersOnPropertyViewModelBuilder.cs" />
     <Compile Include="Controllers\Offers\Commands\AcceptOfferCommand.cs" />
     <Compile Include="Controllers\Offers\Commands\AcceptOfferCommandHandler.cs" />
     <Compile Include="Controllers\Offers\Commands\RejectOfferCommand.cs" />
     <Compile Include="Controllers\Offers\Commands\RejectOfferCommandHandler.cs" />
     <Compile Include="Controllers\Offers\OffersController.cs" />
+    <Compile Include="Controllers\Offers\ViewModels\ViewRequestsOnPropertyViewModel.cs" />
+    <Compile Include="Controllers\Property\Builders\BookViewingViewModelBuilder.cs" />
+    <Compile Include="Controllers\Property\Commands\BookViewingCommand.cs" />
+    <Compile Include="Controllers\Property\Commands\BookViewingCommandHandler.cs" />
+    <Compile Include="Controllers\Property\ViewingsController.cs" />
     <Compile Include="Controllers\Offers\ViewModels\OffersOnPropertyViewModel.cs" />
     <Compile Include="Controllers\Property\Builders\MakeOfferViewModelBuilder.cs" />
     <Compile Include="Controllers\Property\Builders\MyPropertiesViewModelBuilder.cs" />
@@ -207,9 +229,12 @@
     <Compile Include="Controllers\Property\Commands\MakeOfferCommand.cs" />
     <Compile Include="Controllers\Property\Commands\MakeOfferCommandHandler.cs" />
     <Compile Include="Controllers\Property\PropertyController.cs" />
+    <Compile Include="Controllers\Property\ViewModels\BookViewingViewModel.cs" />
     <Compile Include="Controllers\Property\ViewModels\CreatePropertyViewModel.cs" />
     <Compile Include="Controllers\Property\ViewModels\MakeOfferViewModel.cs" />
     <Compile Include="Controllers\Property\ViewModels\MyPropertiesViewModel.cs" />
+    <Compile Include="Controllers\Property\ViewModels\ViewingViewModel.cs" />
+    <Compile Include="Controllers\Property\ViewModels\OfferViewModel.cs" />
     <Compile Include="Controllers\Property\ViewModels\PropertiesViewModel.cs" />
     <Compile Include="Controllers\Property\ViewModels\PropertyViewModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -244,32 +269,70 @@
     <Compile Include="Migrations\201505101607236_AddFieldsToOffers.Designer.cs">
       <DependentUpon>201505101607236_AddFieldsToOffers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704081246364_Files.cs" />
-    <Compile Include="Migrations\201704081246364_Files.Designer.cs">
-      <DependentUpon>201704081246364_Files.cs</DependentUpon>
+    <Compile Include="Migrations\201704091445498_AppDbModel.cs" />
+    <Compile Include="Migrations\201704091445498_AppDbModel.Designer.cs">
+      <DependentUpon>201704091445498_AppDbModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704081301267_Files1.cs" />
-    <Compile Include="Migrations\201704081301267_Files1.Designer.cs">
-      <DependentUpon>201704081301267_Files1.cs</DependentUpon>
+    <Compile Include="Migrations\201704100823407_ModelUpdate2.cs" />
+    <Compile Include="Migrations\201704100823407_ModelUpdate2.Designer.cs">
+      <DependentUpon>201704100823407_ModelUpdate2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704081304069_Property.cs" />
-    <Compile Include="Migrations\201704081304069_Property.Designer.cs">
-      <DependentUpon>201704081304069_Property.cs</DependentUpon>
+    <Compile Include="Migrations\201704101446110_ModelUpdate21.cs" />
+    <Compile Include="Migrations\201704101446110_ModelUpdate21.Designer.cs">
+      <DependentUpon>201704101446110_ModelUpdate21.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201704081354567_Files2.cs" />
-    <Compile Include="Migrations\201704081354567_Files2.Designer.cs">
-      <DependentUpon>201704081354567_Files2.cs</DependentUpon>
+    <Compile Include="Migrations\201704101817349_ModelUpdate22.cs" />
+    <Compile Include="Migrations\201704101817349_ModelUpdate22.Designer.cs">
+      <DependentUpon>201704101817349_ModelUpdate22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704120835500_ModelUpdate23.cs" />
+    <Compile Include="Migrations\201704120835500_ModelUpdate23.Designer.cs">
+      <DependentUpon>201704120835500_ModelUpdate23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704120848027_ModelUpdate24.cs" />
+    <Compile Include="Migrations\201704120848027_ModelUpdate24.Designer.cs">
+      <DependentUpon>201704120848027_ModelUpdate24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704120950029_ModelUpdate25.cs" />
+    <Compile Include="Migrations\201704120950029_ModelUpdate25.Designer.cs">
+      <DependentUpon>201704120950029_ModelUpdate25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704121104377_ModelUpdate26.cs" />
+    <Compile Include="Migrations\201704121104377_ModelUpdate26.Designer.cs">
+      <DependentUpon>201704121104377_ModelUpdate26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704132119462_ModelUpdate3.cs" />
+    <Compile Include="Migrations\201704132119462_ModelUpdate3.Designer.cs">
+      <DependentUpon>201704132119462_ModelUpdate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704132131515_ModelUpdate31.cs" />
+    <Compile Include="Migrations\201704132131515_ModelUpdate31.Designer.cs">
+      <DependentUpon>201704132131515_ModelUpdate31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704132218155_ModelUpdate32.cs" />
+    <Compile Include="Migrations\201704132218155_ModelUpdate32.Designer.cs">
+      <DependentUpon>201704132218155_ModelUpdate32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704132228181_ModelUpdate33.cs" />
+    <Compile Include="Migrations\201704132228181_ModelUpdate33.Designer.cs">
+      <DependentUpon>201704132228181_ModelUpdate33.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Entity.cs" />
     <Compile Include="Models\File.cs" />
     <Compile Include="Models\FileType.cs" />
+    <Compile Include="Models\IEntity.cs" />
+    <Compile Include="Models\IRequestableEntity.cs" />
     <Compile Include="Models\OfferStatus.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\RequestableEntity.cs" />
+    <Compile Include="Models\Viewing.cs" />
+    <Compile Include="Models\ViewingStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -278,12 +341,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\calendar-icon.png" />
+    <Content Include="Content\jquery.datetimepicker.css" />
+    <Content Include="Content\ui-datepicker.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -292,14 +356,18 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <None Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\datepicker.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.datetimepicker.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -311,6 +379,8 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -346,9 +416,12 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Views\Account\UnAuthorized.cshtml" />
+    <Content Include="Views\Offers\MyOffersOnProperty.cshtml" />
+    <Content Include="Views\Property\BookViewing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Viewings\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -375,18 +448,45 @@
     <EmbeddedResource Include="Migrations\201505101607236_AddFieldsToOffers.resx">
       <DependentUpon>201505101607236_AddFieldsToOffers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704081246364_Files.resx">
-      <DependentUpon>201704081246364_Files.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704091445498_AppDbModel.resx">
+      <DependentUpon>201704091445498_AppDbModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704081301267_Files1.resx">
-      <DependentUpon>201704081301267_Files1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704100823407_ModelUpdate2.resx">
+      <DependentUpon>201704100823407_ModelUpdate2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704081304069_Property.resx">
-      <DependentUpon>201704081304069_Property.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704101446110_ModelUpdate21.resx">
+      <DependentUpon>201704101446110_ModelUpdate21.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704081354567_Files2.resx">
-      <DependentUpon>201704081354567_Files2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201704101817349_ModelUpdate22.resx">
+      <DependentUpon>201704101817349_ModelUpdate22.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704120835500_ModelUpdate23.resx">
+      <DependentUpon>201704120835500_ModelUpdate23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704120848027_ModelUpdate24.resx">
+      <DependentUpon>201704120848027_ModelUpdate24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704120950029_ModelUpdate25.resx">
+      <DependentUpon>201704120950029_ModelUpdate25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704121104377_ModelUpdate26.resx">
+      <DependentUpon>201704121104377_ModelUpdate26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704132119462_ModelUpdate3.resx">
+      <DependentUpon>201704132119462_ModelUpdate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704132131515_ModelUpdate31.resx">
+      <DependentUpon>201704132131515_ModelUpdate31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704132218155_ModelUpdate32.resx">
+      <DependentUpon>201704132218155_ModelUpdate32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704132228181_ModelUpdate33.resx">
+      <DependentUpon>201704132228181_ModelUpdate33.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

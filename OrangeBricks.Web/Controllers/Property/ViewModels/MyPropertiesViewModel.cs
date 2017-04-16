@@ -5,5 +5,8 @@ namespace OrangeBricks.Web.Controllers.Property.ViewModels
     public class MyPropertiesViewModel
     {
         public List<PropertyViewModel> Properties { get; set; }
+
+        public List<OfferViewModel> Offers { get; set; }
+
     }
 }

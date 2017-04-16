@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using OrangeBricks.Web.Models;
 
 namespace OrangeBricks.Web.Controllers.Property.Commands
 {
@@ -35,6 +34,8 @@ namespace OrangeBricks.Web.Controllers.Property.Commands
         public byte ImageThumb { get; set; } // -
 
         public string SellerUserId { get; set; }
+
+        public int BuyerUserId { get; set; }  // -
 
     }
 }

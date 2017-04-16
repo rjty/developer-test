@@ -15,14 +15,14 @@ namespace OrangeBricks.Web.Controllers.Property.Builders
         public MakeOfferViewModel Build(int id)
         {
             var property = _context.Properties.Find(id);
-            var offer = _context.Properties.Find(id);
 
             return new MakeOfferViewModel
             {
                 PropertyId = property.Id,
                 PropertyType = property.PropertyType,
                 StreetName = property.StreetName,
-                Offer = 100000, // TODO: property.SuggestedAskingPrice
+                Offer = 100000,  // - Default Offer
+                // TODO: property.SuggestedAskingPrice
                 AskingPrice = property.AskingPrice
             };
         }

@@ -7,6 +7,6 @@ namespace OrangeBricks.Web.Models
 {
     public enum FileType
     {
-        ThumbPhoto = 1, Photo
+        Avatar = 1, Photo
     }
 }

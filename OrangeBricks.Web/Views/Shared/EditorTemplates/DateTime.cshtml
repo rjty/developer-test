@@ -1,0 +1,29 @@
+﻿@model DateTime?
+
+@Html.TextBox("", (Model.HasValue ? Model.Value.ToShortDateString() :
+    string.Empty), new
+    {
+        @class = "datetimepicker",
+        @readonly = "readonly"
+    })
+
+<script>
+    // set default date
+    var d = new Date();
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+
+    var output = d.getFullYear() + '/' +
+    (month < 10 ? '0' : '') + month + '/' +
+    (day < 10 ? '0' : '') + day;
+
+    $(".datetimepicker").val(output + " 00:01:00");
+
+    $(function () {
+        $('.datetimepicker').datetimepicker({
+            minDate: 0,
+            dateFormat: 'dd-MM-yyyy'
+        }
+        );
+    });
+</script>
